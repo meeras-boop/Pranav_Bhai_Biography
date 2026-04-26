@@ -40,11 +40,11 @@ st.markdown("""
 
 # Professional Resume-Style Data
 profile = {
-    "name": "Pranav Patel",
+    "name": "Pranav Pinara",
     "title": "Computer Engineering Student",
     "bio": "2nd Semester Diploma Student | Tech Enthusiast | Sportsman",
     "birthdate": "12th November 2009",
-    "email": "pranav.patel@student.edu",
+    "email": "pranav.Pinara@student.edu",
     "location": "India"
 }
 
@@ -132,7 +132,7 @@ html = r"""
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>Pranav Patel • Portfolio</title>
+<title>Pranav Pinara • Portfolio</title>
 <style>
     * {
         margin: 0;
@@ -449,7 +449,7 @@ html = r"""
 <div class="container">
     <!-- Header -->
     <div class="header">
-        <div class="name">⚡ Pranav Patel ⚡</div>
+        <div class="name">⚡ Pranav Pinara ⚡</div>
         <div class="title">Computer Engineering Student • 2nd Semester</div>
         <div class="bio">Passionate about AI/ML • Web Development • Mobile Apps</div>
         <div class="info-grid">
@@ -610,7 +610,7 @@ html = r"""
 
     <!-- Footer -->
     <div class="footer">
-        ⚡ Built with precision • Portfolio of Pranav Patel ⚡
+        ⚡ Built with precision • Portfolio of Pranav Pinara ⚡
     </div>
 </div>
 
