@@ -245,7 +245,7 @@ html = r"""
         <div class="title">Computer Engineering Student | Aspiring AI/ML Engineer</div>
         <div class="info-row">
             <div class="info-badge">🎂 12 Nov 2009</div>
-            <div class="info-badge">📍 Ahmedabad, India</div>
+            <div class="info-badge">📍 Anand, India</div>
             <div class="info-badge">📧 pranav.Pinara@student.edu</div>
         </div>
     </div>
