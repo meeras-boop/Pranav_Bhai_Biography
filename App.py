@@ -1,7 +1,7 @@
 import json
 import streamlit as st
 
-st.set_page_config(page_title="Pranav Patel • Portfolio", layout="wide", page_icon="⚡")
+st.set_page_config(page_title="Pranav Pinara • Portfolio", layout="wide", page_icon="⚡")
 
 # Professional Resume-Style Data
 profile = {
