@@ -1,7 +1,42 @@
 import json
 import streamlit as st
 
-st.set_page_config(page_title="Pranav Pinara • Portfolio", layout="wide", page_icon="⚡")
+# Remove Streamlit's default padding and header
+st.set_page_config(
+    page_title="Pranav Pinara • Portfolio", 
+    layout="wide", 
+    page_icon="⚡",
+    initial_sidebar_state="collapsed"
+)
+
+# Hide Streamlit's default elements
+st.markdown("""
+    <style>
+        /* Hide Streamlit branding and default elements */
+        #MainMenu {visibility: hidden;}
+        footer {visibility: hidden;}
+        header {visibility: hidden;}
+        .stApp {
+            margin: 0;
+            padding: 0;
+        }
+        .stApp > header {
+            display: none !important;
+        }
+        .main .block-container {
+            padding: 0 !important;
+            max-width: 100% !important;
+        }
+        /* Remove all default margins */
+        .stApp {
+            margin-top: -60px;
+        }
+        .element-container, .stMarkdown, .stMarkdown div {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+""", unsafe_allow_html=True)
 
 # Professional Resume-Style Data
 profile = {
@@ -58,7 +93,7 @@ habits = [
     "Time management & planning"
 ]
 
-# Projects (You can add actual projects)
+# Projects
 projects = [
     {
         "name": "Portfolio Website",
@@ -77,7 +112,7 @@ projects = [
     }
 ]
 
-# Certifications (Planned/Completed)
+# Certifications
 certifications = [
     "Python for Everybody (In Progress)",
     "Web Development Bootcamp - 2025",
@@ -96,7 +131,7 @@ html = r"""
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <title>Pranav Patel • Portfolio</title>
 <style>
     * {
@@ -110,12 +145,23 @@ html = r"""
         background: #0a0e27;
         color: #fff;
         line-height: 1.6;
+        overflow-x: hidden;
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    /* Remove any default margins */
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
     }
 
     .container {
-        max-width: 1300px;
+        max-width: 1400px;
         margin: 0 auto;
         padding: 40px 20px;
+        width: 100%;
     }
 
     /* Header Section */
@@ -125,6 +171,7 @@ html = r"""
         padding: 50px;
         margin-bottom: 30px;
         text-align: center;
+        width: 100%;
     }
 
     .name {
@@ -169,6 +216,7 @@ html = r"""
         margin-bottom: 25px;
         backdrop-filter: blur(10px);
         border: 1px solid rgba(255,255,255,0.1);
+        width: 100%;
     }
 
     .section-title {
@@ -338,6 +386,10 @@ html = r"""
 
     /* Responsive */
     @media (max-width: 768px) {
+        .container {
+            padding: 20px 15px;
+        }
+        
         .name {
             font-size: 36px;
         }
@@ -355,7 +407,31 @@ html = r"""
         }
         
         .header {
-            padding: 30px;
+            padding: 30px 20px;
+        }
+        
+        .info-grid {
+            gap: 15px;
+        }
+        
+        .info-item {
+            font-size: 12px;
+            padding: 6px 12px;
+        }
+    }
+
+    /* For very small phones */
+    @media (max-width: 480px) {
+        .name {
+            font-size: 28px;
+        }
+        
+        .section-title {
+            font-size: 22px;
+        }
+        
+        .degree {
+            font-size: 18px;
         }
     }
 
@@ -562,4 +638,5 @@ html = r"""
 </html>
 """
 
+# Use full container width without any padding
 st.components.v1.html(html, height=1200, scrolling=True)
