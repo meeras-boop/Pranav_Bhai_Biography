@@ -3,7 +3,7 @@ import streamlit as st
 
 # Remove Streamlit's default padding and header
 st.set_page_config(
-    page_title="Pranav Patel • Portfolio", 
+    page_title="Pranav Pinara • Portfolio", 
     layout="wide", 
     page_icon="⚡",
     initial_sidebar_state="collapsed"
@@ -29,7 +29,7 @@ html = r"""
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pranav Patel • Portfolio</title>
+<title>Pranav Pinara • Portfolio</title>
 <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     
@@ -241,12 +241,12 @@ html = r"""
 <div class="container">
     <!-- Header -->
     <div class="header">
-        <div class="name">⚡ Pranav Patel ⚡</div>
+        <div class="name">⚡ Pranav Pinara ⚡</div>
         <div class="title">Computer Engineering Student | Aspiring AI/ML Engineer</div>
         <div class="info-row">
             <div class="info-badge">🎂 12 Nov 2009</div>
             <div class="info-badge">📍 Ahmedabad, India</div>
-            <div class="info-badge">📧 pranav.patel@student.edu</div>
+            <div class="info-badge">📧 pranav.Pinara@student.edu</div>
         </div>
     </div>
 
@@ -416,7 +416,7 @@ html = r"""
 
     <!-- Footer -->
     <div class="footer">
-        ⚡ Open for internships • Available for opportunities • Pranav Patel ⚡
+        ⚡ Open for internships • Available for opportunities • Pranav Pinara ⚡
     </div>
 </div>
 
