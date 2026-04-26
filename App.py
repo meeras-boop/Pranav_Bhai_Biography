@@ -396,7 +396,7 @@ html = r"""
         <ul class="habit-list">
             <li>💻 Daily Coding (2+ hrs)</li>
             <li>🌅 6 AM Wake-up</li>
-            <li>🎯 LeetCode Practice</li>
+            <li>🎯 LogicBuilder</li>
             <li>🏃 Regular Fitness</li>
             <li>📚 Tech Reading</li>
             <li>⏰ Time Management</li>
